@@ -1,0 +1,1 @@
+extends Node\nclass_name Main\n\nfunc _ready() -> void:\n\t# Create SimulationManager\n\tvar simulation_manager = SimulationManager.new()\n\tadd_child(simulation_manager)\n\t\n\t# Create UI\n\tvar ui = SimulationUI.new()\n\tsimulation_manager.add_child(ui)\n\tui.name = \"UI\"\n\t\n\tprint(\"Detective Simulation initialized. UI ready.\")\n
